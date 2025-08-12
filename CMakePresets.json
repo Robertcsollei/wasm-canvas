@@ -2,19 +2,21 @@
   "version": 4,
   "configurePresets": [
     {
-      "name": "native-debug",
-      "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/native-debug",
-      "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug" }
-    },
-    {
       "name": "wasm-release",
+      "displayName": "WASM Release (Emscripten)",
       "generator": "Ninja",
       "binaryDir": "${sourceDir}/build/wasm-release",
       "toolchainFile": "$env{EMSDK}/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release"
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_CROSSCOMPILING_EMULATOR": "$env{EMSDK}/node/22.16.0_64bit/bin/node.exe"
       }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "wasm-release",
+      "configurePreset": "wasm-release"
     }
   ]
 }
