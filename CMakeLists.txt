@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
 project(wasm_canvas)
 
-add_subdirectory(packages/core-cpp)
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+add_subdirectory(packages/engine)

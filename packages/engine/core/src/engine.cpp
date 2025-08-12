@@ -1,29 +1,27 @@
-#include "app.h"
+#include "engine.h"
 #include <iostream>
 #include <thread>
 
-App::App() 
-	: renderer()
+Engine::Engine(IRenderer* renderer) 
+	: m_renderer(renderer)
 {
   // Initialize the application
 std::cout << "Application initialized." << std::endl;
 }
 
-App::~App() 
+Engine::~Engine() 
 {
   // Clean up resources
 }
 
 
 
-void App::update() 
+void Engine::update() 
 {
-std::cout << "Run Updated!" << std::endl;
 // Update the application state
-  renderer.renderFrame();
 }
 
 
-void App::dummyAction() {
+void Engine::dummyAction() {
 	std::cout << "Dummy action!" << std::endl;
 }

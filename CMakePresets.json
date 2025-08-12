@@ -9,7 +9,18 @@
       "toolchainFile": "$env{EMSDK}/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_CROSSCOMPILING_EMULATOR": "$env{EMSDK}/node/22.16.0_64bit/bin/node.exe"
+        "CMAKE_CROSSCOMPILING_EMULATOR": "$env{EMSDK}/node/22.16.0_64bit/bin/node.exe",
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG}/scripts/buildsystems/vcpkg.cmake"
+      }
+    },
+    {
+      "name": "native-release",
+      "displayName": "Native Release (MSVC)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/native-release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG}/scripts/buildsystems/vcpkg.cmake"
       }
     }
   ],
@@ -17,6 +28,10 @@
     {
       "name": "wasm-release",
       "configurePreset": "wasm-release"
+    },
+    {
+      "name": "native-release",
+      "configurePreset": "native-release"
     }
   ]
 }

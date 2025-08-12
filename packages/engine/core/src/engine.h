@@ -1,12 +1,12 @@
 #pragma once
-#include "render/renderer.h"
+#include "renderer.hpp"
 
 
-class App {
+class Engine {
 
 public:
-    App();
-    ~App();
+    Engine(IRenderer* renderer);
+    ~Engine();
 
 public:
     bool running() { return true; };
@@ -15,5 +15,5 @@ public:
 
 
 private:
-    Renderer renderer;
+    IRenderer* m_renderer = nullptr;
 };
