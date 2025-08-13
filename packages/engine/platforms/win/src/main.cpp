@@ -2,8 +2,8 @@
 #include <windows.h>
 #include <iostream>
 
-#include "engine.h""
-#include "renderer_gl.hpp"
+#include <core/engine.h>
+#include <renderer/renderer_gl.h>
 
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) {
@@ -39,8 +39,8 @@ int APIENTRY WinMain(HINSTANCE hInst, HINSTANCE, LPSTR, int nCmdShow) {
     wc.lpszClassName = kClass;
     RegisterClassExW(&wc);
 
-    static RendererGL renderer;
-    static Engine engine(&renderer);
+    static Renderer::RendererGL renderer;
+    static Core::Engine engine(&renderer);
 
     std::cout << "Core Debug Window starting..." << std::endl;
 

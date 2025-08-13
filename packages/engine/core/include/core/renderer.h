@@ -1,5 +1,6 @@
 #pragma once
 
+namespace Core {
 struct IRenderer {
     virtual ~IRenderer() = default;
 
@@ -8,3 +9,4 @@ struct IRenderer {
     virtual void draw() = 0;
     virtual void endFrame() = 0;
 };
+}

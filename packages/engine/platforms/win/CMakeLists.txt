@@ -1,4 +1,4 @@
-﻿add_executable(core_dbg WIN32 src/main.cpp)
+﻿add_executable(core_dbg WIN32 src/main.cpp "src/test.h")
 
 target_link_libraries(core_dbg
   PRIVATE core

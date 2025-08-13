@@ -1,7 +1,7 @@
 #include "emscripten_shim.h"
-#include "engine.h"
-#include "api.hpp"
-#include "renderer_gl.hpp"
+#include <core/engine.h>
+#include <renderer/renderer_gl.h>
+
 
 
 static void tick() {
@@ -9,8 +9,8 @@ static void tick() {
 }
 
 int main() {
-    static RendererGL renderer;
-    static Engine engine(&renderer);
+    static Renderer::RendererGL renderer;
+    static Core::Engine engine(&renderer);
     engineWasmBinding::g_engine = &engine;
     emscripten_set_main_loop(tick, 0, 1);
     return 0;

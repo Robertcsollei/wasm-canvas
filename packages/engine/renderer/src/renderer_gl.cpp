@@ -1,18 +1,22 @@
-#include "renderer_gl.hpp"
+#include <renderer/renderer_gl.h>
 
 
-void RendererGL::init() {
-
-}
-
-void RendererGL::beginFrame(int width, int height)
+namespace Renderer
 {
+	void RendererGL::init() {
+
+	}
+
+	void RendererGL::beginFrame(int width, int height)
+	{
+	}
+
+	void RendererGL::draw()
+	{
+	}
+
+	void RendererGL::endFrame()
+	{
+	}
 }
 
-void RendererGL::draw()
-{
-}
-
-void RendererGL::endFrame()
-{
-}
