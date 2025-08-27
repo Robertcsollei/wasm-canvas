@@ -19,9 +19,11 @@ To serve as a learning project and reference for others who want to see how a GI
 
 ## Planned Features
 
-✅ Basic 3D globe (with tiled raster imagery)
-✅ Camera controls (orbit / pan / zoom)
-✅ Simple layer system (imagery + vector overlays)
+- ✅ Basic 3D globe (with tiled raster imagery)
+- ✅ Camera controls (orbit / pan / zoom)
+- ✅ Simple layer system (imagery + vector overlays)
+
+The renderer is being developed separately in the [Core GL repo.](https://github.com/Robertcsollei/Core-GL)
 
 ## Roadmap
 
@@ -54,6 +56,7 @@ cmake --build build
 
 
 TerraKit is not trying to replace full-blown GIS systems (QGIS, Cesium, ArcGIS). Instead, it’s a small, explicit toolkit for experimenting with geospatial data, rendering pipelines, and cross-platform GIS apps. Think of it as a sandbox or base layer you can grow from.
+
 
 
 
