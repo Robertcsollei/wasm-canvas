@@ -1,4 +1,4 @@
-<img src="https://github.com/Robertcsollei/TerraKit/blob/main/resources/TerraKit.png" alt="TerraKit" width="162" height="64">
+<img src="https://github.com/Robertcsollei/TerraKit/blob/main/resources/TerraKit.png" alt="TerraKit">
 
 ### TerraKit 
 
