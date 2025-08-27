@@ -1,4 +1,4 @@
-[!TerraKit](https://github.com/Robertcsollei/TerraKit/blob/main/resources/TerraKit.png)
+![TerraKit](https://github.com/Robertcsollei/TerraKit/blob/main/resources/TerraKit.png)
 
 A lightweight, cross-platform Globe-first GIS viewer/editor.
 
