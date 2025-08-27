@@ -1,4 +1,5 @@
-﻿![TerraKit](https://github.com/Robertcsollei/TerraKit/blob/main/resources/TerraKit.png =162x64)
+<img src="https://github.com/Robertcsollei/TerraKit/blob/main/resources/TerraKit.png" alt="TerraKit" width="162" height="64">
+### TerraKit 
 
 A lightweight, cross-platform Globe-first GIS viewer/editor.
 
@@ -54,4 +55,5 @@ cmake --build build
 
 
 TerraKit is not trying to replace full-blown GIS systems (QGIS, Cesium, ArcGIS). Instead, it’s a small, explicit toolkit for experimenting with geospatial data, rendering pipelines, and cross-platform GIS apps. Think of it as a sandbox or base layer you can grow from.
+
 
