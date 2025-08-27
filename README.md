@@ -1,4 +1,5 @@
 <img src="https://github.com/Robertcsollei/TerraKit/blob/main/resources/TerraKit.png" alt="TerraKit" width="162" height="64">
+
 ### TerraKit 
 
 A lightweight, cross-platform Globe-first GIS viewer/editor.
